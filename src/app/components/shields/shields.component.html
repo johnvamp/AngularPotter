@@ -1,0 +1,16 @@
+<div class="shields">
+  <mat-card class="example-card col-md-3" *ngFor="let house of houses">
+    <mat-card-header>
+      <mat-card-title>{{house.house}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src={{house.shield}} alt="Photo of the house's shield">
+    <mat-card-content>
+      <p>
+        Members: {{house.numberOfMembers}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="showMembers(house.house)">Show Members</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

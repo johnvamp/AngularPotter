@@ -1,0 +1,24 @@
+<mat-card class="profile-card">
+  <img mat-card-image src="{{data.memberProfile.image}}" alt="Photo of a Member">
+  <div class="infocard">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{data.memberProfile.name}} {{data.memberProfile.lastname}}</mat-card-title>
+      <mat-card-subtitle>{{data.memberProfile.ancestry}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>Actor: {{data.memberProfile.actor}}</p>
+      <p>Date of Birth: {{data.memberProfile.dateOfBirth}}</p>
+      <p>Eyecolour: {{data.memberProfile.eyeColor}}</p>
+      <p>Gender: {{data.memberProfile.gender}}</p>
+      <p>Haircolour: {{data.memberProfile.hairColour}}</p>
+      <p>Patronus: {{data.memberProfile.patronus}}</p>
+      <h2>Wand</h2>
+      <p>Core: {{data.memberProfile.wand.core}}</p>
+      <p>Length: {{data.memberProfile.wand.length}}</p>
+      <p>Wood: {{data.memberProfile.wand.wood}}</p>
+
+    </mat-card-content>
+  </div>
+</mat-card>

@@ -1,0 +1,18 @@
+.example-header-image {
+  background-image: url('https://cdn.popcultcha.com.au/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/h/a/harry-potter-3d-chrome-logo-emblem.png');
+  background-size: cover;
+}
+
+.profile-card {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  img{
+    flex: 2;
+  }
+  .infocard{
+    flex: 1;
+    margin-left: 30px;
+  }
+}
